@@ -44,7 +44,7 @@ body {
     height: 100%;
     padding: 20px;
     position: absolute;
-    background: blue;
+    background: grey;
     backface-visibility: hidden;
 }
 
