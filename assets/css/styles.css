@@ -70,7 +70,7 @@ header > h1 {
 
 .card {
     width: calc(30% - 10px);
-    height: calc(30% - 10px);
+    height: calc(25% - 10px);
     position: relative;
     margin: 5px auto 5px auto;
     transform: scale(1);
@@ -87,6 +87,19 @@ header > h1 {
     transform: rotateY(180deg);
 }
 
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.reset-button {
+    
+    color: black;
+}
+
 .front-card,
 .back-card {
     width: 100%;
@@ -101,6 +114,32 @@ header > h1 {
     transform: rotateY(180deg);
 }
 
+.win-container {
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: none;
+}
+
+
+.win-box {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(253, 113, 113, 0.6);
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.win-box > h3 {
+    color: white;
+    letter-spacing: 0.3px;
+    line-height: 130%;
+    
+}
+
+
+/* Footer */
 
 
 footer {
@@ -124,25 +163,25 @@ footer {
 
 /* Media queries */
 
-@media only screen and (min-width: 450px) {
-
-    .memory-box {
-        width: 100vw;
-        height: 60vh;
-    }
-
-
+@media only screen and (max-width: 360px) {
     .card {
-        width: calc(40% - 10px);
-        height: calc(40% - 10px);
+        width: calc(32% - 10px);
+        height: calc(20% - 10px);
     }
+
+
+}
+
+@media only screen and (min-width: 361px) {
+    .card {
+        width: calc(33% - 10px);
+        height: calc(25% - 10px);
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) {
-    .memory-box {
-        width: 100vw;
-        height: 60vh;
-    }
 
     .card {
         width: calc(30% - 10px);
@@ -151,25 +190,18 @@ footer {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
 
-
+    .card {
+        width: calc(24% - 10px);
+        height: calc(35% - 10px);
+    }
 
 }
 
-@media only screen and (min-width: 1300px) {
-
-
-    .memory-box {
-        width: 100vw;
-    }
+@media only screen and (min-width: 1400px) {
 
     .card {
-        width: calc(15%);
-        height: calc(60%);
-    }
-
-    footer {
-        bottom: -600px;
+        height: calc(40% - 10px);
     }
 }
