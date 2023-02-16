@@ -1,3 +1,8 @@
+/* Start game script */
+
+
+
+
 
 /* Memory board */
 const cards = document.querySelectorAll('.card');
@@ -76,7 +81,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 /* Timer for memory game */
 
 const timeH = document.querySelector('.timer-memory')
-let timeSecond = 90;
+let timeSecond = 20;
 
 displayTime(timeSecond)
 
@@ -97,4 +102,17 @@ function displayTime(second){
 
 function endTime() {
   timeH.innerHTML = 'GAME OVER'
+  lockBoard = true;
+}
+
+/* Reset button */
+
+const resetButton = document.querySelector('.reset-button');
+
+function reset() {
+  document.getElementByClassName("card").value.reset();
+}
+
+document.getElementByClassName('reset-button').onclick = function reset() {
+
 }
