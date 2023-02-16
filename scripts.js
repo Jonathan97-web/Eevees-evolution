@@ -1,3 +1,5 @@
+
+/* Memory board */
 const cards = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
@@ -68,3 +70,5 @@ function flipCard() {
   })();
   
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+/* Memory board End */

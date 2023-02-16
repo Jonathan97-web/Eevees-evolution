@@ -11,21 +11,70 @@ body {
     display: flex;
     background-color: #edf2f4;
 }
+
+/* Header */
+
+header {
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+}
+
+header > h1 {
+    color: white;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.under-header {
+    color: red;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+
 /* Memory Game */
+
+
+.memory-timer {
+    display: flex;
+    height: 50px;
+    width: 20vw;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+
+}
+
+.memory-timer > h1 {
+    color: white;
+
+}
+
 .memory-box {
     width: 100vw;
-    height: 320px;
+    height: 40vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
+    align-items: center;
 }
 
 .card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
+    width: calc(30% - 10px);
+    height: calc(30% - 10px);
     position: relative;
-    margin: 5px;
+    margin: 5px auto 5px auto;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -78,10 +127,28 @@ footer {
 
 /* Media queries */
 
+@media only screen and (min-width: 450px) {
+
+    .memory-box {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .card {
+        width: calc(40% - 10px);
+        height: calc(40% - 10px);
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .memory-box {
         width: 100vw;
-        height: 768px;
+        height: 60vh;
+    }
+
+    .card {
+        width: calc(30% - 10px);
+        height: calc(30% - 10px);
     }
 
     .footer-box {
@@ -96,4 +163,26 @@ footer {
 
 @media only screen and (min-width: 1024px) {
 
+    .memory-box {
+        height: 65vh;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+    .memory-box {
+        height: 70vw;
+    }
+
+    footer {
+      display: flex;
+    }
+    
+    .footer-box {
+        width: 100%;
+        margin-top: 50vw;
+        
+    }
 }
