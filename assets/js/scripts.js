@@ -1,4 +1,4 @@
-/* Start game script */
+/* Start game screen */
 
 
 
@@ -81,7 +81,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 /* Timer for memory game */
 
 const timeH = document.querySelector('.timer-memory')
-let timeSecond = 1;
+let timeSecond = 30;
 
 displayTime(timeSecond)
 
@@ -111,7 +111,7 @@ const resetButton = document.querySelector('.reset-button');
 
 function reset() {
 
-  windows.reset
+  window.location.reload();
 
 }
 
@@ -124,3 +124,4 @@ function showWinScreen() {
 
 
 }
+
