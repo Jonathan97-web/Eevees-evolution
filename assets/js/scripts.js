@@ -1,5 +1,6 @@
 /* Start game screen */
 
+let totalMatches = 0;
 
 
 
@@ -39,6 +40,16 @@ function flipCard() {
         let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
 
         isMatch ? disableCards() : unFlipCards();
+        if (isMatch) {
+          totalMatches += 1;
+          document.getElementById('matches').innerText = totalMatches;
+          let cardCount = document.querySelectorAll('.card').length;
+
+          if (totalMatches == (cardCount / 2)) {
+              clearInterval(countDown);
+              showWinScreen();
+          }
+        }
   }
 
   function disableCards() {
@@ -81,7 +92,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 /* Timer for memory game */
 
 const timeH = document.querySelector('.timer-memory')
-let timeSecond = 30;
+let timeSecond = 240;
 
 displayTime(timeSecond)
 
@@ -107,7 +118,8 @@ function endTime() {
 
 /* Reset button */
 
-const resetButton = document.querySelector('.reset-button');
+const resetButton = document.getElementById('reset-button');
+resetButton.addEventListener('click', reset);
 
 function reset() {
 
@@ -116,12 +128,10 @@ function reset() {
 }
 
 
-
 /* Win Screen */ 
 
 function showWinScreen() {
-  document.querySelector('win-container').style.display = 'flex';
+  document.querySelector('.win-container').style.display = 'flex';
 
 
 }
-
