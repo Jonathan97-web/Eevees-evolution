@@ -1,6 +1,5 @@
 /* jshint esversion: 11 */
 
-/* Start game screen */
 
 
 
@@ -11,7 +10,7 @@ let totalMatches = 0;
 const cards = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
-let lockBoard = false;
+let lockBoard = true;
 let firstCard, secondCard;
 
 function flipCard() {
@@ -88,29 +87,36 @@ function flipCard() {
   })();
   
 cards.forEach(card => card.addEventListener('click', flipCard));
-
-/* Memory board End */
+/* Memory board end */
 
 /* Timer for memory game */
 
-const timeH = document.querySelector('.timer-memory')
+/* Start game timer */
+let countDown;
+
+function startGame() {
+  lockBoard = false;
+  displayTime(timeSecond);
+
+  countDown = setInterval (()=>{
+    timeSecond--;
+    displayTime(timeSecond);
+    if(timeSecond <= 0){
+      endTime();
+      clearInterval(countDown);
+    }
+  },1000);
+}
+
+const timeH = document.querySelector('.timer-memory');
+timeH.addEventListener('click', startGame);
 let timeSecond = 240;
 
-displayTime(timeSecond)
-
-const countDown = setInterval (()=>{
-  timeSecond--;
-  displayTime(timeSecond);
-  if(timeSecond <= 0  ||  timeSecond < 1){
-    endTime();
-    clearInterval(countDown);
-  }
-},1000)
 
 function displayTime(second){
   const min = Math.floor(second / 60);
   const sec = Math.floor(second % 60);
-  timeH.innerHTML = `${min<10 ? '0': ''}${min}:${sec<10 ? '0':''}${sec}`
+  timeH.innerHTML = `${min<10 ? '0': ''}${min}:${sec<10 ? '0':''}${sec}`;
 }
 
 function endTime() {
