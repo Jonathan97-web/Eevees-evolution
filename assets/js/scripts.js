@@ -1,8 +1,10 @@
+/* jshint esversion: 11 */
+
 /* Start game screen */
 
+
+
 let totalMatches = 0;
-
-
 
 
 /* Memory board */
