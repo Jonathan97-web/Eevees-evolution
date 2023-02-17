@@ -95,7 +95,7 @@ header > h1 {
 }
 
 
-.reset-button {
+#reset-button {
     
     color: black;
 }
@@ -108,6 +108,7 @@ header > h1 {
     position: absolute;
     background: rgba(253, 113, 113, 0.6);
     backface-visibility: hidden;
+    object-fit: cover;
 }
 
 .front-card {
