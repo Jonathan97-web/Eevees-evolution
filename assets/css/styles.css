@@ -7,10 +7,12 @@
 }
 
 body {
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     background-color: #edf2f4;
     font-family: sans-serif;
+    flex-direction: column;
+
 }
 
 /* Header */
@@ -18,7 +20,7 @@ body {
 header {
     position: absolute;
     background-color: black;
-    width: 100vw;
+    width: 100%;
 }
 
 header > h1 {
@@ -34,6 +36,25 @@ header > h1 {
     font-family: sans-serif;
     margin-left: 5px;
 }
+
+.matches-box {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#matches {
+    color: black;
+    font-weight: 600;
+}
+
+.matches-box > p {
+    color: black;
+    font-weight: 600;
+}
+
+
 
 
 /* Memory Game */
@@ -55,24 +76,26 @@ header > h1 {
 
 .memory-timer > h1 {
     color: white;
+    text-align: center;
 
 }
 
 .memory-box {
-    width: 100vw;
-    height: 60vh;
+    width: 95vw;
+    height: 35vw;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;
     align-items: center;
+    margin: auto;
 }
 
 .card {
-    width: calc(30% - 10px);
-    height: calc(25% - 10px);
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
     position: relative;
-    margin: 5px auto 5px auto;
+    margin: auto;
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
@@ -104,11 +127,10 @@ header > h1 {
 .back-card {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     position: absolute;
     background: rgba(253, 113, 113, 0.6);
     backface-visibility: hidden;
-    object-fit: cover;
 }
 
 .front-card {
@@ -143,66 +165,61 @@ header > h1 {
 /* Footer */
 
 
-footer {
-    border: 2px solid black;
+.footer-box {
+    background-color: grey;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-.footer-box {
-    background-color: grey;
     height: 60px;
+    display: flex;
+    justify-content: center;
 
 }
 
 .footer-box > h2 {
     text-align: center;
     color: white;
+    align-self: flex-start;
 }
+
+.footer-box > ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+a:hover {
+    color: white;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+}
+
 
 
 /* Media queries */
 
-@media only screen and (max-width: 360px) {
+
+
+@media only screen and (max-width: 650px) {
     .card {
-        width: calc(32% - 10px);
-        height: calc(20% - 10px);
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+    }
+
+    .memory-box {
+        width: 95vw;
+        height: 50vw;
+
     }
 
 
 }
 
-@media only screen and (min-width: 361px) {
-    .card {
-        width: calc(33% - 10px);
-        height: calc(25% - 10px);
-    }
 
-
-}
-
-@media only screen and (min-width: 768px) {
-
-    .card {
-        width: calc(30% - 10px);
-        height: calc(30% - 10px);
-    }
-
-}
-
-@media only screen and (min-width: 768px) {
-
-    .card {
-        width: calc(24% - 10px);
-        height: calc(35% - 10px);
-    }
-
-}
-
-@media only screen and (min-width: 1400px) {
-
-    .card {
-        height: calc(40% - 10px);
-    }
-}
