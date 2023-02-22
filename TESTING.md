@@ -71,15 +71,15 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop (DevTools) | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| Desktop| ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor (DevTools) | ![screenshot](documentation/responsive-xl.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Works as expected |
-| 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
+| Mobile (DevTools) | ![screenshot](/documentation/image/mobile-responsive.png) | Works as expected |
+| Tablet (DevTools) | ![screenshot](/documentation/image/tablet-responsive.png) | Works as expected |
+| Desktop (DevTools) | ![screenshot](/documentation/image/desktop-responsive-devtools.png) | Works as expected |
+| Desktop| ![screenshot](/documentation/image/desktop-responsive.png) | Works as expected |
+| XL Monitor (DevTools) | ![screenshot](/documentation/image/2k-monitor-devtools.png) | Works as expected |
+| XL Monitor | ![screenshot](/documentation/image/2k-monitor.png) | Works as expected |
+| 4K Monitor (DevTools) | ![screenshot](/documentation/image/4k-responsive-devtools.png) | Minor scaling issues |
 | iPhone 14 Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
-| Macbook 13" Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
+| Macbook 13" Pro | ![screenshot](/documentation/image/safari-macOS-compability.png) | Works as expected |
 | x | x | repeat for any other tested sizes |
 
 ## Lighthouse Audit
