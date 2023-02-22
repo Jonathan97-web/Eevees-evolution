@@ -55,10 +55,10 @@ function flipCard() {
   checkForMatch();
 }
 
-
+/* Win screen function */
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
+// Checks for match and checks for win condition
   isMatch ? disableCards() : unFlipCards();
   if (isMatch) {
     totalMatches += 1;
@@ -92,12 +92,12 @@ function unFlipCards() {
   }, 1000);
 
 }
-
+// Resets board
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
-
+// Random order of cards on board
 (function shuffle() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
@@ -127,10 +127,10 @@ function startGame() {
     }
   }, 1000);
 }
-
+// Timer
 const timeH = document.querySelector('.timer-memory');
 timeH.addEventListener('click', startGame);
-let timeSecond = 120;
+let timeSecond = 60;
 
 
 function displayTime(second) {
@@ -138,13 +138,13 @@ function displayTime(second) {
   const sec = Math.floor(second % 60);
   timeH.innerHTML = `${min<10 ? '0': ''}${min}:${sec<10 ? '0':''}${sec}`;
 }
-
+// Game over
 function endTime() {
   timeH.innerHTML = 'GAME OVER';
   lockBoard = true;
   timeH.removeEventListener('click', startGame);
 }
-
+// Win screen
 function youWin() {
   timeH.innerHTML = 'You Win!';
   lockBoard = true;
