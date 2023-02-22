@@ -33,7 +33,7 @@ I used [Coolors.co](https://coolors.co/7a5c58-000000-ffffff-f2bfbf-ffcad4) to ge
 
 For this project I only used sans-serif as a font, since this is a standard font I will add the information about the font here.
 
-- [Sans-serif Glossary](https://fonts.google.com/knowledge/glossary/sans_serif) was used for all text on the website
+- [Sans-serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used for all text on the website
 
 ## Features
 
@@ -80,7 +80,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Reset Game**
 
 - Reset game button that turns pink when hovered over.
-- Refreshes the page completely and restarts the game.  
+- Flips the cards with an animation and resets the timer so you can play again.
 ![reset button picture](documentation/image/reset-button.png)  
 ![reset button picture](documentation/image/reset-button2.png)
 
