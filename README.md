@@ -11,7 +11,7 @@ In this game you will match cards with eachother to help Eevee evolve, there are
 
 ## [Live site](https://jonathan97-web.github.io/Eevees-evolution/)
 
-![Am I responsive picture](/documentation/image/responsive.png)
+![Am I responsive picture](documentation/image/responsive.png)
 [Am I responsive website](https://ui.dev/amiresponsive?url=https://jonathan97-web.github.io/PP2-JS)
 
 ## UX
@@ -25,7 +25,7 @@ Explain your colours and the colour scheme.
 - `#F2BFBF` used for main background on body.
 - `#FFCAD4` used for text/links when hovered over.
 
-![Coolors.co](/documentation/image/coolors.png)
+![Coolors.co](documentation/image/coolors.png)
 I used [Coolors.co](https://coolors.co/7a5c58-000000-f2bfbf-ffcad4) to generate my color palette.  
 
 ### Typography
@@ -43,8 +43,8 @@ For this project I only used sans-serif as a font, since this is a standard font
 - Main header which can be used as a way to refresh the page.
 - Lights up with a pink color when hovered over.
 
-![header picture](/documentation/image/feature-header.png)  
-![header picture](/documentation/image/feature-header2.png)
+![header picture](documentation/image/feature-header.png)  
+![header picture](documentation/image/feature-header2.png)
 
 - **Start game button**
 
@@ -54,18 +54,18 @@ For this project I only used sans-serif as a font, since this is a standard font
 - When countdown reaches zero it will say game over.
 - If game is won it will say you win!
 
-![start game picture](/documentation/image/start-game.png)  
-![start game picture](/documentation/image/start-game2.png)
-![start game picture](/documentation/image/start-game4.png)  
-![start game picture](/documentation/image/start-game3.png)
+![start game picture](documentation/image/start-game.png)  
+![start game picture](documentation/image/start-game2.png)
+![start game picture](documentation/image/start-game4.png)  
+![start game picture](documentation/image/start-game3.png)
 
 - **Information Modal**
 
 - Pop up modal when clicked
 - Black button that turns pink when hovered over.  
-![modal picture](/documentation/image/modal2.png)  
-![modal picture](/documentation/image/modal.png)
-![modal picture](/documentation/image/modal3.png)
+![modal picture](documentation/image/modal2.png)  
+![modal picture](documentation/image/modal.png)
+![modal picture](documentation/image/modal3.png)
 
 - **Memory Board**
 
@@ -73,39 +73,39 @@ For this project I only used sans-serif as a font, since this is a standard font
 - Flip animation when clicked.
 - Shows how many matches you've gotten so far.
 - On the backside are pictures of Eevee's evolutions.  
-![memory board picture](/documentation/image/memory-board.png)
-![memory board picture](/documentation/image/memory-board2.png)
+![memory board picture](documentation/image/memory-board.png)
+![memory board picture](documentation/image/memory-board2.png)
 
 - **Reset Game**
 
 - Reset game button that turns pink when hovered over.
 - Refreshes the page completely and restarts the game.  
-![reset button picture](/documentation/image/reset-button.png)  
-![reset button picture](/documentation/image/reset-button2.png)
+![reset button picture](documentation/image/reset-button.png)  
+![reset button picture](documentation/image/reset-button2.png)
 
 - **Footer**
 
 - Tells you who produced the page.
 - Links to my Github and Linkedin for credit.
 - Footer links light pink when hovered over.
-![footer picture](/documentation/image/footer.png)  
-![footer picture](/documentation/image/footer2.png)
+![footer picture](documentation/image/footer.png)  
+![footer picture](documentation/image/footer2.png)
 
 ## Future Features
 
-### Reset button that uses proper JavaScript
+**Reset button that uses proper JavaScript**
 
--I want to add a reset button that resets the functions instead of the page.
+- I want to add a reset button that resets the functions instead of the page.
 
-### Better design for the website with more interactivity
+**Better design for the website with more interactivity**
 
--I would like to make animations on the modal and better design overall for the website.
+- I would like to make animations on the modal and better design overall for the website.
 
 ## Tools & Technologies Used  
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and/or [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
@@ -145,7 +145,7 @@ You can clone the repository by following these steps:
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
 
-- `git clone https://github.com/Jonathan97-web/PP2-JS.git`
+- `git clone https://github.com/Jonathan97-web/Eevees-evolution.git`
 
 7. Press Enter to create your local clone.
 
@@ -182,7 +182,6 @@ As of the time of writing there should be no differences.
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [YouTube / WEB CIFAR](https://www.youtube.com/watch?v=_a4XCarxwr8) | Timer | Creating a timer for memory|
 | [YouTube / FreeCodeCamp](https://www.youtube.com/watch?v=ZniVgo8U7ek) | Memory tutorial | Tutorial for creating a memory game |
-| [Tim Nelson](https://github.com/TravelTimN) | whole page | Helped me through this project a lot |
 
 ### Media
 
@@ -199,4 +198,4 @@ A few examples have been provided below to give you some ideas.
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support and guidance throughout this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my spouse/partner (Merle), for believing in me, creating the images on the memory board for my project and allowing me to make this transition into software development, also for letting me stay up very late and working on this project.
+- I would like to thank my partner (Merle), for believing in me, creating the images on the memory board for my project and allowing me to make this transition into software development, also for letting me stay up very late and working on this project.
