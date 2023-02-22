@@ -80,7 +80,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Reset Game**
 
 - Reset game button that turns pink when hovered over.
-- Flips the cards with an animation and resets the timer so you can play again.
+- Flips the cards with an animation and resets the timer so you can play again.  
 ![reset button picture](documentation/image/reset-button.png)  
 ![reset button picture](documentation/image/reset-button2.png)
 
