@@ -36,28 +36,30 @@ let lockBoard = true;
 let firstCard, secondCard;
 
 function flipCard() {
+  // game over if no more time remaining
   if (timeSecond <= 0) {
     endTime();
   }
+
+  // if the board is locked, do nothing
   if (lockBoard) return;
+
+  // if re-clicking first card, do nothing
   if (this === firstCard) return;
 
+  // increment total move counter
   totalMoves++;
-  this.classList.add('flip');
+  this.classList.add('flip');  // flip the card
 
   if (!hasFlippedCard) {
     // first click
     hasFlippedCard = true;
     firstCard = this;
-
     return;
   }
 
-
   // second click
   secondCard = this;
-
-
   checkForMatch();
 }
 
@@ -66,8 +68,8 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   // Checks for match and checks for win condition
   if (isMatch) {
-    firstCard.classList.add('matched');
-    secondCard.classList.add('matched');
+    firstCard.classList.add('matched', 'disable');
+    secondCard.classList.add('matched', 'disable');
     disableCards();
     totalMatches += 1;
     document.getElementById('matches').innerText = totalMatches;
@@ -107,13 +109,16 @@ function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
 }
+
+
 // Random order of cards on board
-(function shuffle() {
+shuffleCards();
+function shuffleCards() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
     card.style.order = randomPos;
   });
-})();
+}
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 /* Memory board end */
@@ -140,7 +145,7 @@ function startGame() {
 // Timer
 const timeH = document.querySelector('.timer-memory');
 timeH.addEventListener('click', startGame);
-let timeSecond = 10;
+let timeSecond = 60;
 
 
 function displayTime(second) {
@@ -184,5 +189,20 @@ const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', reset);
 
 function reset() {
-  window.location.reload();
+  cards.forEach(card => {
+    card.classList.remove('flip', 'matched', 'disable');
+    card.addEventListener('click', flipCard);
+  });
+
+  // Small delay so you cannot see where the new cards will be
+  setTimeout(() => {
+    totalMoves = 0;
+    totalMatches = 0;
+    timeSecond = 60;
+    document.getElementById('matches').innerText = totalMatches;
+    lockBoard = false;
+    hasFlippedCard = false;
+    shuffleCards();
+    startGame();
+  }, 500);
 }
