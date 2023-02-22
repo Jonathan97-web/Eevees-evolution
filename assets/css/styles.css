@@ -107,14 +107,14 @@ header {
     align-items: center;
 }
 
-.memory-timer>h1 {
+.memory-timer>h2 {
     color: white;
     text-align: center;
 
 
 }
 
-.memory-timer>h1:hover {
+.memory-timer>h2:hover {
     color: #ffcad4;
     cursor: pointer;
 }
