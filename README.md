@@ -9,14 +9,12 @@ In this game you will match cards with eachother to help Eevee evolve, there are
 - If you need information how to play press the info icon located at the top right.
 - Have fun!
 
-## [Live site](https://jonathan97-web.github.io/PP2-JS/)
+## [Live site](https://jonathan97-web.github.io/Eevees-evolution/)
 
 ![Am I responsive picture](/documentation/image/responsive.png)
 [Am I responsive website](https://ui.dev/amiresponsive?url=https://jonathan97-web.github.io/PP2-JS)
 
 ## UX
-
-In this section, you will briefly explain your design processes.
 
 ### Colour Scheme
 
@@ -125,12 +123,12 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
-- In the [GitHub repository](https://github.com/Jonathan97-web/PP2-JS), navigate to the Settings tab  
+- In the [GitHub repository](https://github.com/Jonathan97-web/Eevees-evolution), navigate to the Settings tab  
 - Click pages tab.
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://jonathan97-web.github.io/PP2-JS)
+The live link can be found [here](https://jonathan97-web.github.io/Eevees-evolution/)
 
 ### Local Deployment
 
@@ -140,7 +138,7 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/Jonathan97-web/PP2-JS)
+1. Go to the [GitHub repository](https://github.com/Jonathan97-web/Eevees-evolution)
 2. Locate the Code button above the list of files and click it
 3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
 4. Open Git Bash or Terminal
@@ -153,7 +151,7 @@ You can clone the repository by following these steps:
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Jonathan97-web/PP2-JS)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Jonathan97-web/Eevees-evolution)
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -163,7 +161,7 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Jonathan97-web/PP2-JS)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Jonathan97-web/Eevees-evolution)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
