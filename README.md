@@ -20,13 +20,14 @@ In this game you will match cards with eachother to help Eevee evolve, there are
 
 Explain your colours and the colour scheme.
 
-- `#000000` used for primary text.
+- `#000000` used for borders.
 - `#7A5C58` used for background elements.
 - `#F2BFBF` used for main background on body.
 - `#FFCAD4` used for text/links when hovered over.
+- `#FFFFFF` used for primary text.
 
-![Coolors.co](documentation/image/coolors.png)
-I used [Coolors.co](https://coolors.co/7a5c58-000000-f2bfbf-ffcad4) to generate my color palette.  
+![Coolors.co](documentation/image/coolors-palette.png)
+I used [Coolors.co](https://coolors.co/7a5c58-000000-ffffff-f2bfbf-ffcad4) to generate my color palette.  
 
 ### Typography
 
@@ -86,10 +87,17 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Footer**
 
 - Tells you who produced the page.
-- Links to my Github and Linkedin for credit.
-- Footer links light pink when hovered over.
+    - Links to my Github and Linkedin for credit.
+    - Footer links light pink when hovered over.
 ![footer picture](documentation/image/footer.png)  
 ![footer picture](documentation/image/footer2.png)
+
+- **Win/lose modals**
+    - Different modals depending on if you win/lose.
+    - Will pop up either when you get all the matches or the time runs out.
+
+    ![Win modal](documentation/image/win-modal.png)
+    ![Lose modal](documentation/image/lose-modal.png)
 
 ## Future Features
 
@@ -188,7 +196,8 @@ As of the time of writing there should be no differences.
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Favicon](https://www.favicon.io) | entire site | image | generated favicon |
-| [Procreate](https://www.procreate.com) | entire site | image | images on memory board created by Merle Gunther, my girlfriend. |
+| [Procreate](https://www.procreate.com) | entire site | image | images on memory board created by Merle Guenther, my girlfriend. |
+| [Etsy / Mink and mango](https://www.etsy.com/shop/minkandmango) | entire site | image | Taken inspiration and redrawn pictures |
 
 ### Acknowledgements
 
