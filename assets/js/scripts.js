@@ -33,6 +33,9 @@ let lockBoard = true;
 let firstCard, secondCard;
 
 function flipCard() {
+  if (timeSecond <= 0) {
+    endTime();
+  }
   if (lockBoard) return;
   if (this === firstCard) return;
 
@@ -59,8 +62,10 @@ function flipCard() {
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   // Checks for match and checks for win condition
-  isMatch ? disableCards() : unFlipCards();
   if (isMatch) {
+    firstCard.classList.add('matched');
+    secondCard.classList.add('matched');
+    disableCards();
     totalMatches += 1;
     document.getElementById('matches').innerText = totalMatches;
     let cardCount = document.querySelectorAll('.card').length;
@@ -69,6 +74,8 @@ function checkForMatch() {
       clearInterval(countDown);
       youWin();
     }
+  } else {
+    unFlipCards();
   }
 }
 
@@ -130,7 +137,7 @@ function startGame() {
 // Timer
 const timeH = document.querySelector('.timer-memory');
 timeH.addEventListener('click', startGame);
-let timeSecond = 60;
+let timeSecond = 5;
 
 
 function displayTime(second) {
@@ -140,6 +147,13 @@ function displayTime(second) {
 }
 // Game over
 function endTime() {
+  cards.forEach(card => {
+    card.classList.add('disable');
+  });
+  let unmatchedCards = document.querySelectorAll('.flip:not(.matched)');
+  unmatchedCards.forEach(card => {
+    card.classList.remove('flip');
+  });
   timeH.innerHTML = 'GAME OVER';
   lockBoard = true;
   timeH.removeEventListener('click', startGame);
