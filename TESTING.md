@@ -10,7 +10,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathan97-web.github.io%2FEevees-evolution%2Findex.html) | ![screenshot](documentation/image/html-validator.png)
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjonathan97-web.github.io%2FEevees-evolution%2Findex.html) | ![HTML validation](documentation/image/html-validator.png)
 
 ### CSS
 
@@ -20,7 +20,7 @@ Sample CSS code validation documentation (tables are extremely helpful!):
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathan97-web.github.io%2FEevees-evolution) | ![screenshot](documentation/image/css-validator.png) | Pass: No Errors |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fjonathan97-web.github.io%2FEevees-evolution) | ![CSS validation](documentation/image/css-validator.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -30,8 +30,8 @@ Sample JS code validation documentation (tables are extremely helpful!):
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/image/jshint-validator.png) | Pass: No errors |
-| script.js | ![screenshot](documentation/image/jshint-validator-bug.png) | Before/after fixing bug |
+| script.js | ![Jshint validation](documentation/image/jshint-validator.png) | Pass: No errors |
+| script.js | ![Jshint validation bug](documentation/image/jshint-validator-bug.png) | Before/after fixing bug |
 
 ## Browser Compatibility
 
@@ -39,27 +39,29 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/image/chrome-compability.png) | Works as expected |
-| Firefox Developer Edition | ![screenshot](documentation/image/firefox-de-compability.png) | Works as expected |
-| Edge | ![screenshot](documentation/image/microsoft-edge-compability.png) | Works as expected |
-| Safari | ![screenshot](documentation/image/safari-macos-compability.png) | Works as expected |
-| Opera GX | ![screenshot](documentation/image/opera-gx-compability.png) | Works as expected |
+| Chrome | ![Google chrome](documentation/image/chrome-compability.png) | Works as expected |
+| Firefox Developer Edition | ![Firefox Developers edition](documentation/image/firefox-de-compability.png) | Works as expected |
+| Edge | ![Microsoft edge](documentation/image/microsoft-edge-compability.png) | Works as expected |
+| Safari | ![Safari](documentation/image/safari-macos-compability.png) | Works as expected |
+| Opera GX | ![Opera GX](documentation/image/opera-gx-compability.png) | Works as expected |
 
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
+Opera GX and Chrome was tested on my main monitor which is 2560x1440p and therefore looks smaller than it actually is
+
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/image/mobile-responsive.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/image/tablet-responsive.png) | Works as expected |
-| Desktop (DevTools) | ![screenshot](documentation/image/desktop-responsive-devtools.png) | Works as expected |
-| Desktop| ![screenshot](documentation/image/desktop-responsive.png) | Works as expected |
-| XL Monitor (DevTools) | ![screenshot](documentation/image/2k-monitor-devtools.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/image/2k-monitor.png) | Works as expected |
-| 4K Monitor (DevTools) | ![screenshot](documentation/image/4k-responsive-devtools.png) | Minor scaling issues |
-| iPhone 14 Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
-| Macbook 13" Pro | ![screenshot](documentation/image/safari-macos-compability.png) | Works as expected |
+| Mobile (DevTools) | ![Mobile responsiveness](documentation/image/mobile-responsive.png) | Works as expected |
+| Tablet (DevTools) | ![Tablet responsiveness](documentation/image/tablet-responsive.png) | Works as expected |
+| Desktop (DevTools) | ![Desktop responsiveness (DevTools)](documentation/image/desktop-responsive-devtools.png) | Works as expected |
+| Desktop| ![Desktop responsiveness](documentation/image/desktop-responsive.png) | Works as expected |
+| XL Monitor (DevTools) | ![XL monitor (DevTools) responsiveness](documentation/image/2k-monitor-devtools.png) | Works as expected |
+| XL Monitor | ![XL monitor responsiveness](documentation/image/2k-monitor.png) | Works as expected |
+| 4K Monitor (DevTools) | ![4K Monitor (DevTools) responsiveness](documentation/image/4k-responsive-devtools.png) | Minor scaling issues |
+| iPhone 14 Pro | ![Iphone 14 pro responsiveness](documentation/image/iphone-responsiveness.png) | Works as expected |
+| Macbook 13" Pro | ![Macbook 13 pro responsiveness](documentation/image/safari-macos-compability.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -82,7 +84,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 - Jshint gave error on line 62: Expected an assignment or function call and instead saw an expression.
     - To fix this, I made a complete if statement with an else instead of using the shorthand way.
-    ![bug #1 picture](documentation/image/jshint-validator-bug.png)
+    ![bug #2 picture](documentation/image/jshint-validator-bug.png)
 
 ## Unfixed Bugs
 
