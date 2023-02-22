@@ -337,4 +337,108 @@ li>a {
         width: 350px;
         
     }
+
+    #reset-button {
+        height: 60px;
+        width: 200px;
+    }
+
+    .under-header {
+        height: 80px;
+    }
+
+    .under-header > a {
+        font-size: 40px;
+    }
+
+    .footer-box {
+        height: 80px;
+    }
+
+
+    .memory-timer {
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .matches-box {
+        height: 60px;
+        font-size: 30px;
+    }
+
+    #modal-button {
+        font-size: 50px;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 30%;
+        font-size: 30px;
+    }
+
+    .modal-content > ol {
+        margin-left: 20px;
+    }
+
+    .modal-content > ul {
+        margin-left: 20px;
+    }
+
+    .close-modal {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 2600px) {
+
+    .card {
+        height: 500px;
+        width: 500px;
+    }
+
+    #reset-button {
+        height: 80px;
+        width: 200px;
+    }
+
+    .memory-timer {
+        height: 80px;
+        font-size: 25px;
+    }
+
+    .matches-box {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .under-header {
+        height: 100px;
+    }
+
+    .under-header > a {
+        font-size: 50px;
+    }
+
+    #modal-button {
+        font-size: 60px;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 30%;
+        font-size: 30px;
+    }
+
+    .modal-content > ol {
+        margin-left: 20px;
+    }
+
+    .modal-content > ul {
+        margin-left: 20px;
+    }
+
+    .close-modal {
+        font-size: 60px;
+    }
+    
 }

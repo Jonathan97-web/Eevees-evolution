@@ -110,7 +110,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /* Timer for memory game */
 
-/* Start game timer */
+/* Start game */
 let countDown;
 
 function startGame() {

@@ -33,8 +33,6 @@ Sample CSS code validation documentation (tables are extremely helpful!):
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-
-
 Sample JS code validation documentation (tables are extremely helpful!):
 
 | File | Screenshot | Notes |
@@ -48,23 +46,16 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera.png) | Minor differences |
-| Internet Explorer | ![screenshot](documentation/browser-iex.png) | Does not work as expected |
+| Chrome | ![screenshot](/documentation/image/chrome-compability.png) | Works as expected |
+| Firefox Developer Edition | ![screenshot](/documentation/image/firefox-de-compability.png) | Works as expected |
+| Edge | ![screenshot](/documentation/image/microsoft-edge-compability.png) | Works as expected |
+| Safari | ![screenshot](/documentation/image/safari-macOS-compability.png) | Works as expected |
+| Opera GX | ![screenshot](/documentation/image/opera-gx-compability.png) | Works as expected |
 | x | x | repeat for any other tested browsers |
 
 ## Responsiveness
 
-Use this space to discuss testing the live/deployed site on various device sizes.
 
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
 
 **IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
 
@@ -82,8 +73,10 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Scaling starts to have minor issues |
+| Desktop (DevTools) | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
+| Desktop| ![screenshot](documentation/responsive-desktop.png) | Works as expected |
+| XL Monitor (DevTools) | ![screenshot](documentation/responsive-xl.png) | Works as expected |
+| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Works as expected |
 | 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
 | iPhone 14 Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
 | Macbook 13" Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
