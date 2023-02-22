@@ -102,10 +102,6 @@ For this project I only used sans-serif as a font, since this is a standard font
 
 ## Future Features
 
-**Reset button that uses proper JavaScript**
-
-- I want to add a reset button that resets the functions instead of the page.
-
 **Better design for the website with more interactivity**
 
 - I would like to make animations on the modal and better design overall for the website.
