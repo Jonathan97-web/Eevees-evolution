@@ -87,7 +87,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Footer**
 
 - Tells you who produced the page.
-    - Links to my Github and Linkedin for credit.
+    - Links to my Github for credit.
     - Footer links light pink when hovered over.
 ![footer picture](documentation/image/footer.png)  
 ![footer picture](documentation/image/footer2.png)
@@ -95,6 +95,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Win/lose modals**
     - Different modals depending on if you win/lose.
     - Will pop up either when you get all the matches or the time runs out.
+    - Blur effect in the background to make it look more pleasing for the eye.
 
     ![Win modal](documentation/image/win-modal.png)
     ![Lose modal](documentation/image/lose-modal.png)
