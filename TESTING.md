@@ -4,12 +4,6 @@ Return back to the [README.md](README.md) file.
 
 ## Code Validation
 
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
@@ -38,7 +32,6 @@ Sample JS code validation documentation (tables are extremely helpful!):
 | File | Screenshot | Notes |
 | --- | --- | --- |
 | script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| x | x | x | repeat for all remaining JavaScript files |
 
 ## Browser Compatibility
 
@@ -51,21 +44,8 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Edge | ![screenshot](/documentation/image/microsoft-edge-compability.png) | Works as expected |
 | Safari | ![screenshot](/documentation/image/safari-macOS-compability.png) | Works as expected |
 | Opera GX | ![screenshot](/documentation/image/opera-gx-compability.png) | Works as expected |
-| x | x | repeat for any other tested browsers |
 
 ## Responsiveness
-
-
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
@@ -80,30 +60,15 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 4K Monitor (DevTools) | ![screenshot](/documentation/image/4k-responsive-devtools.png) | Minor scaling issues |
 | iPhone 14 Pro | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
 | Macbook 13" Pro | ![screenshot](/documentation/image/safari-macOS-compability.png) | Works as expected |
-| x | x | repeat for any other tested sizes |
 
 ## Lighthouse Audit
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | Mobile | ![screenshot](/documentation/image/lighthouse-mobile.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](/documentation/image/lighthouse-desktop.png) | Some minor warnings |
 
 ## Defensive Programming
 
@@ -192,7 +157,6 @@ For JavaScript and Python applications, it's best to screenshot the errors to in
 At the time of writing I cannot find any other bugs.
 
 **Fixed Bugs**
-
 
 - timeSecond--; causing countDown to stack so the timer went down way faster when clicking the countdown timer
 
