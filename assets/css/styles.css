@@ -5,7 +5,6 @@
     box-sizing: border-box
 }
 
-
 body {
     background-color: #f2bfbf;
     font-family: sans-serif;
@@ -34,7 +33,6 @@ header {
 a:hover {
     color: #ffcad4;
 }
-
 
 /* Information modal */
 
@@ -71,7 +69,6 @@ a:hover {
     backdrop-filter: blur(3px);
 }
 
-
 .modal-content {
     background-color: #f2bfbf;
     margin: 20% auto;
@@ -103,8 +100,6 @@ a:hover {
     text-align: center;
 }
 
-
-
 .close-modal {
     color: black;
     margin-left: 5px;
@@ -121,13 +116,11 @@ a:hover {
     cursor: pointer;
 }
 
-
 .modal-content>p {
     text-align: center;
     align-self: center;
     font-weight: bold;
 }
-
 
 /* Memory Game */
 
@@ -156,7 +149,6 @@ a:hover {
     cursor: pointer;
 }
 
-
 .memory-box {
     perspective: 1000px;
     max-width: 100%;
@@ -183,13 +175,11 @@ a:hover {
     transform: rotateY(180deg);
 }
 
-
 .button-div {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-
 
 #reset-button {
     width: 100px;
@@ -199,7 +189,6 @@ a:hover {
     margin-bottom: 100px;
     border-radius: 25px;
 }
-
 
 #reset-button:hover {
     background-color: #ffcad4;
@@ -220,7 +209,6 @@ a:hover {
 .front-card {
     transform: rotateY(180deg);
 }
-
 
 .matches-box {
     display: flex;
@@ -249,8 +237,6 @@ a:hover {
 
 /* Footer */
 
-
-
 .footer-box {
     background-color: #7a5c58;
     width: 100%;
@@ -274,13 +260,10 @@ a:hover {
     font-size: 30px;
 }
 
-
 li>a {
     text-decoration: none;
     color: white;
 }
-
-
 
 /* Media queries */
 
@@ -316,14 +299,12 @@ screen and (max-height: 670px) {
     }
 }
 
-
 @media screen and (min-width: 600px) {
     .card {
         width: 160px;
         height: 160px;
     }
 }
-
 
 @media screen and (min-width: 768px) {
 
