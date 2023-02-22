@@ -1,27 +1,30 @@
 /* jshint esversion: 11 */
 
-/* modal box for header */
+/* Modal functionality */
 
-let modal = document.getElementById("modal-memory");
-let btn = document.getElementById("modal-button");
-let span = document.getElementsByClassName("close-modal")[0];
+let modalInstructions = document.getElementById('modal-instructions');
+let modalInstructionsBtn = document.getElementById('modal-instructions-btn');
+let modalCloseBtns = document.querySelectorAll('.close-modal');
 
-btn.onclick = function () {
-  modal.style.display = "block";
-};
+modalInstructionsBtn.addEventListener('click', function () {
+  modalInstructions.style.display = 'block';
+});
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+modalCloseBtns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    btn.closest('.modal').style.display = 'none';
+  });
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+});
+
+window.addEventListener('click', function (event) {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = 'none';
   }
-};
+});
 
 
-
+let totalMoves = 0;
 let totalMatches = 0;
 
 
@@ -39,7 +42,7 @@ function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
 
-
+  totalMoves++;
   this.classList.add('flip');
 
   if (!hasFlippedCard) {
@@ -137,7 +140,7 @@ function startGame() {
 // Timer
 const timeH = document.querySelector('.timer-memory');
 timeH.addEventListener('click', startGame);
-let timeSecond = 5;
+let timeSecond = 10;
 
 
 function displayTime(second) {
@@ -157,9 +160,18 @@ function endTime() {
   timeH.innerHTML = 'GAME OVER';
   lockBoard = true;
   timeH.removeEventListener('click', startGame);
+  setTimeout(() => {
+    document.getElementById('movestaken').innerText = totalMoves;
+    document.getElementById('matchesfound').innerText = totalMatches;
+    document.getElementById('modal-lose').style.display = 'block';
+  }, 1000);
 }
+
 // Win screen
 function youWin() {
+  document.getElementById('totalmoves').innerText = totalMoves;
+  document.getElementById('timeremain').innerText = `${timeSecond} seconds`;
+  document.getElementById('modal-win').style.display = 'block';
   timeH.innerHTML = 'You Win!';
   lockBoard = true;
   timeH.removeEventListener('click', startGame);
