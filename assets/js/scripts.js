@@ -49,7 +49,7 @@ function flipCard() {
 
   // increment total move counter
   totalMoves++;
-  this.classList.add('flip');  // flip the card
+  this.classList.add('flip'); // flip the card
 
   if (!hasFlippedCard) {
     // first click
@@ -113,6 +113,7 @@ function resetBoard() {
 
 // Random order of cards on board
 shuffleCards();
+
 function shuffleCards() {
   cards.forEach(card => {
     let randomPos = Math.floor(Math.random() * 12);
