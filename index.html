@@ -18,13 +18,14 @@
     <header>
         <h1 class="under-header"><a href="index.html">Eevee's <br> Evolution</a></h1>
 
-        <button id="modal-button" aria-label="Press here for information about the game."><i
-                class="fa-solid fa-circle-info"></i></button>
+        <button id="modal-instructions-btn" aria-label="Press here for information about the game.">
+            <i class="fa-solid fa-circle-info"></i>
+        </button>
     </header>
-    <!-- Modal -->
+    <!-- Modals -->
 
-
-    <div id="modal-memory" class="modal">
+    <!-- Instructions modal -->
+    <aside id="modal-instructions" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
             <h3>How to play memory</h3>
@@ -37,7 +38,31 @@
                 <li>If you want to restart the game press the "Reset Game" button at the bottom of the page.</li>
             </ul>
         </div>
-    </div>
+    </aside>
+    <!-- Win modal -->
+    <aside id="modal-win" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Congratulations</h3>
+            <p>Total moves: <span id="totalmoves"></span></p>
+            <p>Time remaining: <span id="timeremain"></span></p>
+            <ul>
+                <li>To restart the game press the "Reset Game" button at the bottom of the page.</li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Lose modal -->
+    <aside id="modal-lose" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Game over</h3>
+            <p>Total moves: <span id="movestaken"></span></p>
+            <p>Matches found: <span id="matchesfound">0</span> out of 6</p>
+            <ul>
+                <li>To restart the game press the "Reset Game" button at the bottom of the page.</li>
+            </ul>
+        </div>
+    </aside>
 
     <!-- Memory card game -->
     <section>
