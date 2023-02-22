@@ -1,6 +1,5 @@
 /* jshint esversion: 11 */
 
-
 /* modal box for header */
 
 let modal = document.getElementById("modal-memory");
@@ -68,7 +67,7 @@ function checkForMatch() {
 
     if (totalMatches == (cardCount / 2)) {
       clearInterval(countDown);
-      showWinScreen();
+      youWin()
     }
   }
 }
@@ -146,6 +145,13 @@ function endTime() {
   timeH.removeEventListener('click', startGame);
 }
 
+function youWin() {
+  timeH.innerHTML = 'You Win!';
+  lockBoard = true;
+  timeH.removeEventListener('click', startGame);
+}
+
+
 /* Reset button */
 
 const resetButton = document.getElementById('reset-button');
@@ -155,11 +161,3 @@ function reset() {
   window.location.reload();
 }
 
-
-/* Win Screen */
-
-function showWinScreen() {
-  document.querySelector('.win-container').style.display = 'flex';
-
-
-}
