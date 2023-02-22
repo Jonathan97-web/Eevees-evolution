@@ -8,17 +8,17 @@ let span = document.getElementsByClassName("close-modal")[0];
 
 btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
 span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 
 
@@ -58,7 +58,7 @@ function flipCard() {
 /* Win screen function */
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-// Checks for match and checks for win condition
+  // Checks for match and checks for win condition
   isMatch ? disableCards() : unFlipCards();
   if (isMatch) {
     totalMatches += 1;
@@ -67,7 +67,7 @@ function checkForMatch() {
 
     if (totalMatches == (cardCount / 2)) {
       clearInterval(countDown);
-      youWin()
+      youWin();
     }
   }
 }
@@ -114,7 +114,7 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 let countDown;
 
 function startGame() {
-  clearInterval(countDown)
+  clearInterval(countDown);
   lockBoard = false;
   displayTime(timeSecond);
 
@@ -160,4 +160,3 @@ resetButton.addEventListener('click', reset);
 function reset() {
   window.location.reload();
 }
-

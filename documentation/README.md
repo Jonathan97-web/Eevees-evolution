@@ -142,6 +142,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
 - In the [GitHub repository](https://github.com/Jonathan97-web/PP2-JS), navigate to the Settings tab  
+- Click pages tab.
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
@@ -216,4 +217,4 @@ A few examples have been provided below to give you some ideas.
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support and guidance throughout this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my spouse/partner (Merle), for believing in me, and allowing me to make this transition into software development, also for letting me stay up very late and working on this project.
+- I would like to thank my spouse/partner (Merle), for believing in me, creating the images on the memory board for my project and allowing me to make this transition into software development, also for letting me stay up very late and working on this project.
