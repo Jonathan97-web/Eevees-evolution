@@ -140,13 +140,6 @@ The aforementioned tests are just an example of a few different project scenario
 
 ## Bugs
 
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
-
-For JavaScript and Python applications, it's best to screenshot the errors to include them as well.
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
-
 - timeSecond--; causing countDown to stack so the timer went down way faster when clicking the countdown timer
 
     - To fix this, I added a clearInterval(CountDown) to the StartGame function.  
