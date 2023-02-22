@@ -30,7 +30,8 @@ Sample JS code validation documentation (tables are extremely helpful!):
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
+| script.js | ![screenshot](documentation/image/jshint-validator.png) | Pass: No errors |
+| script.js | ![screenshot](documentation/image/jshint-validator-bug.png) | Before/after fixing bug |
 
 ## Browser Compatibility
 
@@ -66,8 +67,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/image/lighthouse-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/image/lighthouse-desktop.png) | Some minor warnings |
+| Home | Mobile | ![Lighthouse mobile](documentation/image/lighthouse-mobile.png) | Some minor warnings |
+| Home | Desktop | ![Lighthouse desktop](documentation/image/lighthouse-desktop.png) | Some minor warnings |
 
 ## Bugs
  
@@ -75,7 +76,13 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 **Fixed Bugs**
 
 - `timeSecond--;` causing countDown to stack so the timer went down way faster when clicking the countdown timer
-    - To fix this, I added a `clearInterval(CountDown)` to the StartGame function.  
+    - To fix this, I added a `clearInterval(CountDown)` to the StartGame function. 
+
+
+
+- Jshint gave error on line 62: Expected an assignment or function call and instead saw an expression.
+    - To fix this, I made a complete if statement with an else instead of using the shorthand way.
+    ![bug #1 picture](documentation/image/jshint-validator-bug.png)
 
 ## Unfixed Bugs
 
