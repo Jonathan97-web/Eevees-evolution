@@ -28,7 +28,7 @@ header {
 
 .under-header>a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
@@ -41,7 +41,7 @@ a:hover {
 #modal-instructions-btn {
     display: flex;
     font-size: 35px;
-    color: black;
+    color: white;
     background-color: #7a5c58;
     border-radius: 30px;
     border: 0;
@@ -59,6 +59,7 @@ a:hover {
 #modal-instructions,
 #modal-win,
 #modal-lose {
+    display: flex;
     display: none;
     position: fixed;
     z-index: 1;
@@ -66,8 +67,10 @@ a:hover {
     width: 100vw;
     height: 100vh;
     overflow: auto;
-    background-color: #7a5c58;
+    background-color: #00000079;
+    justify-content: center;
     top: 0;
+    backdrop-filter: blur(3px);
 }
 
 .modal-content {
@@ -75,28 +78,54 @@ a:hover {
     margin: 15% auto;
     padding: 20px;
     width: 80%;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 
 .modal-content>ol {
-    margin-left: 20px;
     padding: 5px;
     font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
 }
+
+.modal-content>ul {
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+}
+
+.modal-content>h3 {
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 
 .close-modal {
     color: black;
+    margin-left: 5px;
     width: 0;
     font-size: 30px;
     font-weight: bold;
     display: flex;
-    align-self: flex-end;
+    justify-content: center;
 }
 
 .close-modal:hover,
 .close-modal:focus {
     color: #7a5c58;
     cursor: pointer;
+}
+
+
+.modal-content > #totalmoves, #timeremain, #movestaken, #matchesfound {
+    text-align: center;
+    align-self: center;
 }
 
 
@@ -116,7 +145,7 @@ a:hover {
 }
 
 .memory-timer>h2 {
-    color: black;
+    color: white;
     text-align: center;
 
 
@@ -166,7 +195,7 @@ a:hover {
     width: 100px;
     height: 40px;
     background-color: #7a5c58;
-    color: black;
+    color: white;
     margin-bottom: 100px;
     border-radius: 25px;
 }
@@ -206,14 +235,14 @@ a:hover {
 }
 
 #matches {
-    color: black;
+    color: white;
     font-weight: 600;
     background-color: #7a5c58;
     text-align: left
 }
 
 .matches-box>p {
-    color: black;
+    color: white;
     background-color: #7a5c58;
     font-weight: 600;
 }
@@ -248,8 +277,10 @@ a:hover {
 
 li>a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+
 
 /* Media queries */
 
