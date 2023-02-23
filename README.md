@@ -63,7 +63,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Information Modal**
 
 - Pop up modal when clicked
-- white button that changes colors when hovered over.  
+- White button that changes colors when hovered over.  
 ![modal picture](documentation/image/modal2.png)  
 ![modal picture](documentation/image/modal.png)
 ![modal picture](documentation/image/modal3.png)
