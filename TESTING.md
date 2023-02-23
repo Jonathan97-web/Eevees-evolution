@@ -26,7 +26,6 @@ Sample CSS code validation documentation (tables are extremely helpful!):
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-Sample JS code validation documentation (tables are extremely helpful!):
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
