@@ -100,6 +100,19 @@ For this project I only used sans-serif as a font, since this is a standard font
     ![Win modal](documentation/image/win-modal.png)
     ![Lose modal](documentation/image/lose-modal.png)
 
+        - Win in only 12 moves (best) - (⭐⭐⭐⭐⭐)
+        - ![5 stars](documenation/image/5stars.png)
+    - Win in 13-14 moves - (⭐⭐⭐⭐)
+        - ![4 stars](documenation/image/4stars.png)
+    - Win in 15-20 moves - (⭐⭐⭐)
+        - ![3 stars](documenation/image/3stars.png)
+    - Win in 21-24 moves - (⭐⭐)
+        - ![2 stars](documenation/image/2stars.png)
+    - Win in 25-30 moves - (⭐)
+        - ![1 star](documenation/image/1star.png)
+    - Win in 30+ moves (0 stars)
+        - ![0 stars](documenation/image/0stars.png)
+
 ## Future Features
 
 **Better design for the website with more interactivity**
