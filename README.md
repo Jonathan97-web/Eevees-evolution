@@ -63,7 +63,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - **Information Modal**
 
 - Pop up modal when clicked
-- Black button that turns pink when hovered over.  
+- white button that changes colors when hovered over.  
 ![modal picture](documentation/image/modal2.png)  
 ![modal picture](documentation/image/modal.png)
 ![modal picture](documentation/image/modal3.png)
@@ -181,7 +181,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-As of the time of writing there should be no differences.
+The pictures of the deployed version here may differ a bit with colors and alignment due to fixing after taking the pictures.
 
 ## Credits  
 
