@@ -1,22 +1,23 @@
 /* jshint esversion: 11 */
 
 /* Modal functionality */
-
 let modalInstructions = document.getElementById('modal-instructions');
 let modalInstructionsBtn = document.getElementById('modal-instructions-btn');
 let modalCloseBtns = document.querySelectorAll('.close-modal');
 
+// open instructions modal
 modalInstructionsBtn.addEventListener('click', function () {
   modalInstructions.style.display = 'block';
 });
 
+// close modal when 'close' btns clicked
 modalCloseBtns.forEach(btn => {
   btn.addEventListener('click', function () {
     btn.closest('.modal').style.display = 'none';
   });
-
 });
 
+// close modal parent when clicking outside of modal on window
 window.addEventListener('click', function (event) {
   if (event.target.classList.contains('modal')) {
     event.target.style.display = 'none';
@@ -31,83 +32,81 @@ let totalMatches = 0;
 /* Memory board */
 const cards = document.querySelectorAll('.card');
 
-let hasFlippedCard = false;
-let lockBoard = true;
-let firstCard, secondCard;
+let cardOneFlipped = false;
+let boardLocked = true;
+let cardOne, cardTwo;
 
-function flipCard() {
+
+function cardClicked() {
   // game over if no more time remaining
   if (timeSecond <= 0) {
     endTime();
   }
 
   // if the board is locked, do nothing
-  if (lockBoard) return;
+  if (boardLocked) return;
 
   // if re-clicking first card, do nothing
-  if (this === firstCard) return;
+  if (this === cardOne) return;
 
   // increment total move counter
   totalMoves++;
   this.classList.add('flip'); // flip the card
 
-  if (!hasFlippedCard) {
-    // first click
-    hasFlippedCard = true;
-    firstCard = this;
+  if (!cardOneFlipped) {
+    // first card was clicked
+    cardOneFlipped = true;
+    cardOne = this;
     return;
   }
 
-  // second click
-  secondCard = this;
-  checkForMatch();
+  // second card was clicked
+  cardTwo = this;
+  confirmCardsMatch();
 }
 
-/* Win screen function */
-function checkForMatch() {
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-  // Checks for match and checks for win condition
-  if (isMatch) {
-    firstCard.classList.add('matched', 'disable');
-    secondCard.classList.add('matched', 'disable');
-    disableCards();
+/* check if first and second cards match data attribute */
+function confirmCardsMatch() {
+  let cardsMatch = cardOne.dataset.eevee === cardTwo.dataset.eevee;
+
+  if (cardsMatch) {
+    // success: match found, disable these two cards
+    cardOne.classList.add('flip', 'matched', 'disable');
+    cardTwo.classList.add('flip', 'matched', 'disable');
+    // reset the cards for next round
+    cardOneFlipped = false;
+    boardLocked = false;
+    cardOne = null;
+    cardTwo = null;
+
     totalMatches += 1;
     document.getElementById('matches').innerText = totalMatches;
     let cardCount = document.querySelectorAll('.card').length;
 
+    // check if all matches found for win condition
     if (totalMatches == (cardCount / 2)) {
       clearInterval(countDown);
       youWin();
     }
   } else {
-    unFlipCards();
+    resetUnmatchedCards();
   }
 }
 
-function disableCards() {
-  firstCard.removeEventListener('click', flipCard);
-  secondCard.removeEventListener('click', flipCard);
 
-  resetBoard();
-}
-
-function unFlipCards() {
-  // it doesn't match
-  lockBoard = true;
-
-
+function resetUnmatchedCards() {
+  // cards don't match - reset them
+  boardLocked = true;
   setTimeout(() => {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
-
-    resetBoard();
+    cardOne.classList.remove('flip');
+    cardTwo.classList.remove('flip');
+    
+    // reset the cards for next round
+    cardOneFlipped = false;
+    boardLocked = false;
+    cardOne = null;
+    cardTwo = null;
   }, 1000);
-
-}
-// Resets board
-function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
 }
 
 
@@ -121,19 +120,20 @@ function shuffleCards() {
   });
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard));
-/* Memory board end */
+cards.forEach(card => {
+  card.addEventListener('click', cardClicked);
+});
 
-/* Timer for memory game */
 
-/* Start game */
+
+/* Start game functionality */
 let countDown;
 
 function startGame() {
   clearInterval(countDown);
-  lockBoard = false;
+  boardLocked = false;
   displayTime(timeSecond);
-
+  // timer for memory game
   countDown = setInterval(() => {
     timeSecond--;
     displayTime(timeSecond);
@@ -143,17 +143,20 @@ function startGame() {
     }
   }, 1000);
 }
+
 // Timer
 const timeH = document.querySelector('.timer-memory');
 timeH.addEventListener('click', startGame);
 let timeSecond = 60;
 
 
+// display the timer
 function displayTime(second) {
   const min = Math.floor(second / 60);
   const sec = Math.floor(second % 60);
   timeH.innerHTML = `${min<10 ? '0': ''}${min}:${sec<10 ? '0':''}${sec}`;
 }
+
 // Game over
 function endTime() {
   cards.forEach(card => {
@@ -164,8 +167,9 @@ function endTime() {
     card.classList.remove('flip');
   });
   timeH.innerHTML = 'GAME OVER';
-  lockBoard = true;
+  boardLocked = true;
   timeH.removeEventListener('click', startGame);
+  // game over modal
   setTimeout(() => {
     document.getElementById('movestaken').innerText = totalMoves;
     document.getElementById('matchesfound').innerText = totalMatches;
@@ -173,36 +177,36 @@ function endTime() {
   }, 1000);
 }
 
-// Win screen
+// Win screen modal
 function youWin() {
   document.getElementById('totalmoves').innerText = totalMoves;
   document.getElementById('timeremain').innerText = `${timeSecond} seconds`;
   document.getElementById('modal-win').style.display = 'block';
   timeH.innerHTML = 'You Win!';
-  lockBoard = true;
+  boardLocked = true;
   timeH.removeEventListener('click', startGame);
 }
 
 
 /* Reset button */
-
 const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', reset);
 
+// reset the entire game
 function reset() {
   cards.forEach(card => {
     card.classList.remove('flip', 'matched', 'disable');
-    card.addEventListener('click', flipCard);
+    card.addEventListener('click', cardClicked);
   });
 
-  // Small delay so you cannot see where the new cards will be
+  // small delay so you cannot see where the new cards will be
   setTimeout(() => {
     totalMoves = 0;
     totalMatches = 0;
     timeSecond = 60;
     document.getElementById('matches').innerText = totalMatches;
-    lockBoard = false;
-    hasFlippedCard = false;
+    boardLocked = false;
+    cardOneFlipped = false;
     shuffleCards();
     startGame();
   }, 500);
