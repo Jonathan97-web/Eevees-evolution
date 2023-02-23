@@ -1,4 +1,4 @@
-# Eeeve's evolution memory game
+# Eeevee's evolution memory game
 
 ## Welcome to Eeevee's evolution memory game, help Eevee reach his final form
 
