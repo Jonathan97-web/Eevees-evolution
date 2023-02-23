@@ -56,7 +56,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 - If game is won it will say you win!
 
 ![start game picture](documentation/image/start-game.png)  
-![start game picture](documentation/image/start-game2.png)
+![start game picture](documentation/image/start-game2.png)  
 ![start game picture](documentation/image/start-game4.png)  
 ![start game picture](documentation/image/start-game3.png)
 
@@ -88,7 +88,7 @@ For this project I only used sans-serif as a font, since this is a standard font
 
 - Tells you who produced the page.
     - Links to my Github for credit.
-    - Footer links light pink when hovered over.
+    - Footer links light pink when hovered over.  
 ![footer picture](documentation/image/footer.png)  
 ![footer picture](documentation/image/footer2.png)
 
@@ -100,18 +100,14 @@ For this project I only used sans-serif as a font, since this is a standard font
     ![Win modal](documentation/image/win-modal.png)
     ![Lose modal](documentation/image/lose-modal.png)
 
-        - Win in only 12 moves (best) - (⭐⭐⭐⭐⭐)
-        - ![5 stars](documenation/image/5stars.png)
-    - Win in 13-14 moves - (⭐⭐⭐⭐)
-        - ![4 stars](documenation/image/4stars.png)
-    - Win in 15-20 moves - (⭐⭐⭐)
-        - ![3 stars](documenation/image/3stars.png)
-    - Win in 21-24 moves - (⭐⭐)
-        - ![2 stars](documenation/image/2stars.png)
-    - Win in 25-30 moves - (⭐)
-        - ![1 star](documenation/image/1star.png)
-    - Win in 30+ moves (0 stars)
-        - ![0 stars](documenation/image/0stars.png)
+| Moves to Win | Star Rating | Screenshot |
+| --- | --- | --- |
+| 12 (best) | ⭐⭐⭐⭐⭐ | ![5 stars](documentation/image/5stars.png) |
+| 13-14 | ⭐⭐⭐⭐ | ![4 stars](documentation/image/4stars.png) |
+| 15-20 | ⭐⭐⭐ | ![3 stars](documentation/image/3stars.png) |
+| 21-24 | ⭐⭐ | ![2 stars](documentation/image/2stars.png) |
+| 25-30 | ⭐ | ![1 star](documentation/image/1star.png) |
+| 30+ | 0 stars | ![0 stars](documentation/image/0stars.png) |
 
 ## Future Features
 
