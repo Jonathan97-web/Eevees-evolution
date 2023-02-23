@@ -5,10 +5,19 @@
     box-sizing: border-box
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f2bfbf;
     font-family: sans-serif;
     min-height: 100vh;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
 }
 
 /* Header */
@@ -16,12 +25,15 @@ body {
 header {
     background-color: #7a5c58;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
 }
 
 .under-header {
     text-transform: capitalize;
     font-family: sans-serif;
-    margin-left: 5px;
     font-weight: 600;
 }
 
@@ -37,16 +49,12 @@ a:hover {
 /* Information modal */
 
 #modal-instructions-btn {
-    display: flex;
     font-size: 35px;
     color: white;
     background-color: #7a5c58;
     border-radius: 30px;
     border: 0;
-    margin-left: auto;
-    margin-top: -30px;
-    margin-right: 5px;
-    padding: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 #modal-instructions-btn:hover {
@@ -94,7 +102,7 @@ a:hover {
     text-align: center;
 }
 
-.modal-content>h3 {
+.modal-content>h2 {
     padding: 5px;
     font-weight: bold;
     text-align: center;
@@ -188,10 +196,12 @@ a:hover {
     color: white;
     margin-bottom: 100px;
     border-radius: 25px;
+    transition: all 0.2s ease-in-out;
 }
 
 #reset-button:hover {
     background-color: #ffcad4;
+    color: black;
 }
 
 .front-card,
@@ -243,7 +253,6 @@ a:hover {
     left: 0;
     bottom: 0;
     border: 1px solid black;
-    position: fixed;
 }
 
 .footer-box>h3 {
@@ -358,6 +367,7 @@ screen and (max-height: 670px) {
     #reset-button {
         height: 60px;
         width: 200px;
+        font-size: 24px;
     }
 
     .under-header {
@@ -416,6 +426,7 @@ screen and (max-height: 670px) {
     #reset-button {
         height: 80px;
         width: 200px;
+        font-size: 24px;
     }
 
     .memory-timer {
