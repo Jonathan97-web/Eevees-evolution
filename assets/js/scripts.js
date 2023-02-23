@@ -179,6 +179,18 @@ function endTime() {
 
 // Win screen modal
 function youWin() {
+  let stars = document.getElementById('stars');
+  if (totalMoves == 12) {
+    stars.innerText = "⭐⭐⭐⭐⭐";
+  } else if (totalMoves <= 14) {
+    stars.innerText = "⭐⭐⭐⭐";
+  } else if (totalMoves <= 20) {
+    stars.innerText = "⭐⭐⭐";
+  } else if (totalMoves <= 24) {
+    stars.innerText = "⭐⭐";
+  } else if (totalMoves <= 30) {
+    stars.innerText = "⭐";
+  }
   document.getElementById('totalmoves').innerText = totalMoves;
   document.getElementById('timeremain').innerText = `${timeSecond} seconds`;
   document.getElementById('modal-win').style.display = 'block';
